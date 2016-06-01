@@ -17,7 +17,7 @@ var gulp = require('gulp'),
 
 gulp.task('process-style',function(){
   return gulp.src('src/scss/*.scss')/*用这个方法来读取你需要操作的文件  ,当有多个匹配模式时，该参数可以为一个数组*/
-    .pipe(sass({style:'compact'}).on('error', sass.logError)) /*压缩模式*/
+    .pipe(sass({outputStyle:'compact'}).on('error', sass.logError)) /*压缩模式*/
     .pipe(autoprefixer('last 2 version')) /*前缀 版本*/
     .pipe(gulp.dest('dest/css/')); /*导出原文件*/
     // .pipe(rename({suffix:'.min'}))

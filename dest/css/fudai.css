@@ -1,143 +1,159 @@
 @charset "UTF-8";
-/**
- *项目 亲亲宝贝-福袋
- *时间 2016-05-31
- *开发 高燕
- */
-.bgrepeat {
-  background: #fb567e url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/bg.png) left top repeat;
-  max-width: 750px;
-  margin: 0 auto; }
+/** 项目 亲亲宝贝-福袋 时间 2016-05-31 开发 高燕 */
+@keyframes mycloud { 0% { -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px); }
+  50% { -webkit-transform: translate3d(0px, 20px, 0px); transform: translate3d(0px, 20px, 0px); }
+  100% { -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px); } }
 
-.cm_login {
-  display: none;
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%; }
-  .cm_login .inner {
-    padding: 40px 0 28px;
-    min-width: 300px;
-    width: 94.5%;
-    margin: 0 auto;
-    background: #fb567e url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/bg.png) left top repeat;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-    .cm_login .inner .close {
-      background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/btnclose.png) left top no-repeat;
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-      background-size: 20px 20px; }
-    .cm_login .inner dl {
-      padding-bottom: 10px;
-      line-height: 26px;
-      height: 26px;
-      color: #fff; }
-      .cm_login .inner dl.yzm input {
-        width: 44%;
-        margin-right: 2%; }
-      .cm_login .inner dl dt {
-        width: 27%;
-        text-align: center; }
-      .cm_login .inner dl dd {
-        width: 72%; }
-      .cm_login .inner dl input {
-        background: #fff;
-        border: none;
-        height: 26px;
-        border-radius: 3px;
-        outline: none;
-        width: 90%;
-        color: #3b3b3b; }
-    .cm_login .inner a {
-      background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/btnlogin.png) left top no-repeat;
-      width: 130px;
-      height: 35px;
-      display: block;
-      background-size: 130px 35px;
-      margin: 15px auto 0; }
+@-webkit-keyframes mycloud { 0% { -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px); }
+  50% { -webkit-transform: translate3d(0px, 20px, 0px); transform: translate3d(0px, 20px, 0px); }
+  100% { -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px); } }
 
-.cm_tp {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%; }
-  .cm_tp .inner {
-    margin: 10px 15px 0; }
-    .cm_tp .inner a {
-      width: 25px;
-      height: 25px;
-      display: block; }
-      .cm_tp .inner a.fl {
-        background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/topback.png) left top no-repeat;
-        background-size: 25px 25px; }
-      .cm_tp .inner a.fr {
-        background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/toprefresh.png) left top no-repeat;
-        background-size: 25px 25px; }
+.bgrepeat { background: #fb567e url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/bg.png) left top repeat; max-width: 750px; margin: 0 auto; }
 
-.rules {
-  color: #fff;
-  font-size: 14px;
-  text-align: center; }
-  .rules .tp img {
-    width: 40.625%;
-    margin: 28px auto 0; }
-  .rules .md {
-    text-align: left;
-    border: 2px solid #452018;
-    border-radius: 5px;
-    margin: 10px 15px 0;
-    background: #fff;
-    color: #000000;
-    padding: 2%;
-    position: relative; }
-    .rules .md .abs {
-      position: absolute;
-      top: 23%;
-      right: -2.5%;
-      width: 7.1875%; }
-  .rules .btm {
-    padding-bottom: 30px; }
-    .rules .btm p {
-      line-height: 48px; }
-    .rules .btm img {
-      width: 40.46875%; }
+.cm_login { display: none; background: rgba(0, 0, 0, 0.5); position: fixed; left: 0; top: 0; width: 100%; height: 100%; }
 
-.secfudai {
-  width: 100%;
-  color: #fff; }
-  .secfudai li {
-    position: relative; }
-    .secfudai li .subsec {
-      position: absolute; }
-    .secfudai li .subsec1 {
-      top: 34%;
-      left: 21.09375%;
-      font-size: 18px;
-      line-height: 26px; }
-      .secfudai li .subsec1 .tp {
-        font-size: 20px; }
-        .secfudai li .subsec1 .tp b {
-          font-size: 30px; }
-    .secfudai li .subsec2 {
-      top: 16%;
-      right: 2%;
-      font-size: 18px;
-      -webkit-transform: rotate(-15deg);
-              transform: rotate(-15deg); }
-    .secfudai li .subsec3 {
-      bottom: 30%;
-      right: 5%;
-      font-size: 18px; }
-    .secfudai li .subsec4 {
-      bottom: 15%;
-      right: 3%;
-      width: 31.25%; }
+.cm_login .inner { padding: 40px 0 28px; min-width: 300px; width: 94.5%; margin: 0 auto; background: #fb567e url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/bg.png) left top repeat; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.cm_login .inner .close { background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/btnclose.png) left top no-repeat; width: 20px; height: 20px; position: absolute; right: 0px; top: 0px; background-size: 20px 20px; }
+
+.cm_login .inner dl { padding-bottom: 10px; line-height: 26px; height: 26px; color: #fff; }
+
+.cm_login .inner dl.yzm input { width: 44%; margin-right: 2%; }
+
+.cm_login .inner dl dt { width: 27%; text-align: center; }
+
+.cm_login .inner dl dd { width: 72%; }
+
+.cm_login .inner dl input { background: #fff; border: none; height: 26px; border-radius: 3px; outline: none; width: 90%; color: #3b3b3b; }
+
+.cm_login .inner a { background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/btnlogin.png) left top no-repeat; width: 130px; height: 35px; display: block; background-size: 130px 35px; margin: 15px auto 0; }
+
+.cm_tp { position: absolute; left: 0; top: 0; width: 100%; }
+
+.cm_tp .inner { margin: 10px 15px 0; }
+
+.cm_tp .inner a { width: 25px; height: 25px; display: block; }
+
+.cm_tp .inner a.fl { background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/topback.png) left top no-repeat; background-size: 25px 25px; }
+
+.cm_tp .inner a.fr { background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/toprefresh.png) left top no-repeat; background-size: 25px 25px; }
+
+.rules { color: #fff; font-size: 14px; text-align: center; }
+
+.rules .tp img { width: 40.625%; margin: 28px auto 0; }
+
+.rules .md { text-align: left; border: 2px solid #452018; border-radius: 5px; margin: 10px 15px 0; background: #fff; color: #000000; padding: 2%; position: relative; }
+
+.rules .md .abs { position: absolute; top: 23%; right: -2.5%; width: 7.1875%; }
+
+.rules .btm { padding-bottom: 30px; }
+
+.rules .btm p { line-height: 48px; }
+
+.rules .btm img { width: 40.46875%; }
+
+.topbanner { position: relative; }
+
+.topbanner .shake { width: 13px; height: 18px; position: absolute; top: 0%; left: 48%; -webkit-transform: translate(-9%, -50%); transform: translate(-9%, -50%); -webkit-animation: mycloud 3s linear infinite; animation: mycloud 3s linear infinite; }
+
+.secfudai { width: 100%; color: #fff; }
+
+.secfudai li { position: relative; }
+
+.secfudai li .subsec { position: absolute; }
+
+.secfudai li .subsec1 { top: 34%; left: 21.09375%; font-size: 18px; line-height: 26px; }
+
+.secfudai li .subsec1 .tp { font-size: 20px; }
+
+.secfudai li .subsec1 .tp b { font-size: 30px; }
+
+.secfudai li .subsec2 { top: 16%; right: 2%; font-size: 18px; -webkit-transform: rotate(-15deg); transform: rotate(-15deg); }
+
+.secfudai li .subsec3 { bottom: 30%; right: 5%; font-size: 18px; }
+
+.secfudai li .subsec4 { bottom: 15%; right: 3%; width: 31.25%; }
+
+.secpro { padding-top: 40px; }
+
+.secpro .tp { width: 73.59%; margin: 0 auto; }
+
+.secpro .tp .proimg { display: block; margin: 0 auto; width: 100%; box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+
+.secpro .tp p { color: #fff; line-height: 30px; padding-top: 5px; white-space: nowrap; border-bottom: 1px dashed #fc96a7; }
+
+.secpro .tp dl { margin-top: 9px; }
+
+.secpro .tp dl dt { text-align: right; width: 30%; }
+
+.secpro .tp dl dt:nth-child(2) { color: #fff600; font-size: 40px; padding-top: 10px; width: 35%; text-align: center; }
+
+.secpro .tp dl dt del { font-size: 12px; padding-right: 13px; }
+
+.secpro .tp dl dt p { color: #000000; border: none; font-size: 14px; line-height: 18px; padding: 0; }
+
+.secpro .tp dl dd { width: 76px; height: 24px; margin-top: 10px; margin-right: 10px; width: 30%; }
+
+.secpro .md { padding: 0 1.5625%; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+
+.secpro .md .list { padding: 15px 1.5625% 8px; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
+
+.secpro .btm { position: relative; }
+
+.secpro .btm img { display: block; width: 98%; margin: 0 auto; }
+
+.secpro .btm p { position: absolute; width: 100%; height: 30px; line-height: 30px; font-size: 14px; text-align: center; white-space: nowrap; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.secpro .btm p b { color: #e80e04; font-size: 30px; }
+
+/* 微信领取信息 */
+.secwx { color: #fff; position: relative; }
+
+.secwx .posabs1 { position: absolute; left: 0%; top: -0%; width: 25px; height: 36px; }
+
+.secwx .wmsg { font-size: 12px; }
+
+.secwx .wmsg img { width: 50px; height: 50px; }
+
+.secwx .wmsg dt { padding-right: 2%; }
+
+.secwx .sec01 .tp { padding-top: 15px; }
+
+.secwx .sec01 .tp .wmsg { padding-left: 10%; width: 71.375%; margin: 0 auto; }
+
+.secwx .sec01 .md { margin-top: 10px; position: relative; }
+
+.secwx .sec01 .md img { width: 68.125%; margin: 0 auto; display: block; }
+
+.secwx .sec01 .md .posabs2 { position: absolute; left: 15%; top: -4%; width: 14px; height: 20px; }
+
+.secwx .sec01 .md p { color: #ff0000; font-size: 30px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.secwx .sec01 .md p b { font-size: 60px; }
+
+.secwx .sec01 .btm { padding: 23px 10px 11px; margin: 0 10px; border-bottom: 1px dashed #fc96a7; }
+
+.secwx .sec01 .btm a { width: 48%; }
+
+.secwx .sec02 .tp { border: 1px solid #000; border-radius: 5px; margin: 19px 10.625% 12px; }
+
+.secwx .sec02 .tp .tpinner { background: #fff; border-radius: 5px; margin: 1.5625%; color: #f94362; text-align: center; font-size: 14px; white-space: nowrap; padding: 10px 0; }
+
+.secwx .sec02 .tp .tpinner span { color: #000; }
+
+.secwx .sec02 .md .wmsg { margin: 0 6.875%; padding: 10px 0; }
+
+.secwx .sec02 .md .wmsg dt { padding-right: 5%; }
+
+.secwx .sec02 .md .wmsg dd { padding-top: 5px; }
+
+.secwx .sec02 .btm { margin: 0 6.875%; background: #fff; }
+
+.secwx .sec02 .btm ul { padding-bottom: 10px; }
+
+.secwx .sec02 .btm li { width: 28.46875%; padding: 10px 0 0 10px; border-radius: 5px; overflow: hidden; }
+
+/* 微信分享 */
+.wxshare { position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 9999; background: rgba(0, 0, 0, 0.5); }
+
+.wxshare img { width: 50%; position: absolute; right: 0; top: 0; }
