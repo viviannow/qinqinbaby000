@@ -1,0 +1,109 @@
+<!DOCTYPE >
+<html>
+<head>
+<meta charset="utf-8">
+<title>订单详情</title>
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+<link type="text/css" rel="stylesheet" href="http://p0.qinqinbaby.com/Resource/Css/wapnew/public.css" charset="utf-8">
+<link type="text/css"  rel="stylesheet" href="http://p0.qinqinbaby.com/Resource/Css/wapnew/wapnew.css" charset="utf-8">
+</head>
+<body class="body_m">
+	<div class="header">
+		<div class="turnback"><a href=""><img src="http://p0.qinqinbaby.com/Resource/Images/wap/wapnew/header_back.png" alt=""></a></div>
+		订单详情
+	</div>
+	<div class="cnt cntfix tkstep tkupload">
+		<!-- 申请退款商品 退款信息 -->
+		<div class="sec tkpro">
+			<h2>申请退款商品</h2>
+			<dl class="clear prodetaill">
+				<dt class="fl"><a href=""><img src="http://p0.qinqinbaby.com/Resource/Images/wap/wapnew/img102.png" alt=""></a></dt>
+				<dd class="fl">
+					<h3>商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</h3>
+					<p><span>购买数量：2    </span><span>实付金额：￥200.00</span></p>
+				</dd>
+			</dl>
+			<dl class="clear">
+				<dt class="fl">申请服务</dt>
+				<dd class="fl">
+					<select name="" id="">
+						<option value="">仅退款</option>
+					</select>
+				</dd>
+			</dl>
+			<dl class="clear">
+				<dt class="fl">退款原因</dt>
+				<dd class="fl">
+					<select name="" id="">
+						<option value="">仅退款</option>
+					</select>
+				</dd>
+			</dl>
+			<dl class="clear">
+				<dt class="fl">退款金额</dt>
+				<dd class="fl">
+					<input type="text" placeholder="￥200.00">
+					<p>（最多 200.00元 不包含运费 8元）</p>
+				</dd>
+			</dl>
+			<dl class="clear">
+				<dt class="fl">退款说明</dt>
+				<dd class="fl">
+				<textarea name="" id="" cols="30" rows="10" placeholder="请输入退款说明"></textarea>
+				<p>(可不填)</p>
+				</dd>
+			</dl>
+			<dl class="clear">
+				<dt class="fl">上传凭证</dt>
+				<dd class="fl">
+					支持JPG JPEG GIF
+				</dd>
+			</dl>
+			<dl class="clear">
+				<dt class="fl">&nbsp;</dt>
+				<dd class="fl">
+					<ul class="fl">
+						<li class="fl">
+							<div class="uploadimg">
+								<div id="imgdiv1" class="upimgdiv">
+									<input type="file" name="file"  id="inputfile1" />
+									<img class="selectimg" id="imgShow1" title="点击添加图片" alt="点击添加图片" src="http://p0.qinqinbaby.com/Resource/Images/wap/wapnew/add.jpg" />
+								</div>
+							</div>
+						</li>
+						<li class="fl">
+							<div class="uploadimg">
+								<div id="imgdiv2" class="upimgdiv">
+									<input type="file" name="file"  id="inputfile2" />
+									<img class="selectimg" id="imgShow2" title="点击添加图片" alt="点击添加图片" src="http://p0.qinqinbaby.com/Resource/Images/wap/wapnew/add.jpg" />
+								</div>
+							</div>
+						</li>
+						<li class="fl">
+							<div class="uploadimg">
+								<div id="imgdiv3" class="upimgdiv">
+									<input type="file" name="file"  id="inputfile3" />
+									<img class="selectimg" id="imgShow3" title="点击添加图片" alt="点击添加图片" src="http://p0.qinqinbaby.com/Resource/Images/wap/wapnew/add.jpg" />
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+					<p>（请提供相关凭证图片，最少三张）</p>
+				</dd>
+			</dl>
+		</div>
+		<!-- 按钮 -->
+		<div class="sec tkbtn">
+			<a href="javascript:;">提交退款申请</a>
+		</div>
+	</div>
+<script src="http://m.qinqinbaby.com/wap/js/jquery-1.9.1.js"></script>
+<script src="http://m.qinqinbaby.com/wap/js/uploadPreview.js"></script>
+<script>
+	new uploadPreview({ UpBtn: "inputfile1", DivShow: "imgdiv1", ImgShow: "imgShow1" });
+	new uploadPreview({ UpBtn: "inputfile2", DivShow: "imgdiv2", ImgShow: "imgShow2" });
+	new uploadPreview({ UpBtn: "inputfile3", DivShow: "imgdiv3", ImgShow: "imgShow3" });
+</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/**
+ *项目 亲亲宝贝-福袋
+ *时间 2016-05-31
+ *开发 高燕
+ */
+.bgrepeat {
+  background: #fb567e url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/bg.png) left top repeat;
+  max-width: 750px;
+  margin: 0 auto; }
+
+.cm_login {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+  .cm_login .inner {
+    padding: 40px 0 28px;
+    min-width: 300px;
+    width: 94.5%;
+    margin: 0 auto;
+    background: #fb567e url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/bg.png) left top repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .cm_login .inner .close {
+      background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/btnclose.png) left top no-repeat;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      background-size: 20px 20px; }
+    .cm_login .inner dl {
+      padding-bottom: 10px;
+      line-height: 26px;
+      height: 26px;
+      color: #fff; }
+      .cm_login .inner dl.yzm input {
+        width: 44%;
+        margin-right: 2%; }
+      .cm_login .inner dl dt {
+        width: 27%;
+        text-align: center; }
+      .cm_login .inner dl dd {
+        width: 72%; }
+      .cm_login .inner dl input {
+        background: #fff;
+        border: none;
+        height: 26px;
+        border-radius: 3px;
+        outline: none;
+        width: 90%;
+        color: #3b3b3b; }
+    .cm_login .inner a {
+      background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/btnlogin.png) left top no-repeat;
+      width: 130px;
+      height: 35px;
+      display: block;
+      background-size: 130px 35px;
+      margin: 15px auto 0; }
+
+.cm_tp {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%; }
+  .cm_tp .inner {
+    margin: 10px 15px 0; }
+    .cm_tp .inner a {
+      width: 25px;
+      height: 25px;
+      display: block; }
+      .cm_tp .inner a.fl {
+        background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/topback.png) left top no-repeat;
+        background-size: 25px 25px; }
+      .cm_tp .inner a.fr {
+        background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/toprefresh.png) left top no-repeat;
+        background-size: 25px 25px; }
+
+.rules {
+  color: #fff;
+  font-size: 14px;
+  text-align: center; }
+  .rules .tp img {
+    width: 40.625%;
+    margin: 28px auto 0; }
+  .rules .md {
+    text-align: left;
+    border: 2px solid #452018;
+    border-radius: 5px;
+    margin: 10px 15px 0;
+    background: #fff;
+    color: #000000;
+    padding: 2%;
+    position: relative; }
+    .rules .md .abs {
+      position: absolute;
+      top: 23%;
+      right: -2.5%;
+      width: 7.1875%; }
+  .rules .btm {
+    padding-bottom: 30px; }
+    .rules .btm p {
+      line-height: 48px; }
+    .rules .btm img {
+      width: 40.46875%; }
+
+.secfudai {
+  width: 100%;
+  color: #fff; }
+  .secfudai li {
+    position: relative; }
+    .secfudai li .subsec {
+      position: absolute; }
+    .secfudai li .subsec1 {
+      top: 34%;
+      left: 21.09375%;
+      font-size: 18px;
+      line-height: 26px; }
+      .secfudai li .subsec1 .tp {
+        font-size: 20px; }
+        .secfudai li .subsec1 .tp b {
+          font-size: 30px; }
+    .secfudai li .subsec2 {
+      top: 16%;
+      right: 2%;
+      font-size: 18px;
+      -webkit-transform: rotate(-15deg);
+              transform: rotate(-15deg); }
+    .secfudai li .subsec3 {
+      bottom: 30%;
+      right: 5%;
+      font-size: 18px; }
+    .secfudai li .subsec4 {
+      bottom: 15%;
+      right: 3%;
+      width: 31.25%; }

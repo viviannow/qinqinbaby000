@@ -1,0 +1,63 @@
+/*样式重置*/
+html{font-size: 62.5%;}
+html,body,div,p,header,ul,ol,h1,h2,h3,h4,h5,h6,input,dl,dt,dd{margin: 0;padding: 0;}
+html,body,p,header,h2,h3,h4,h5,h6{line-height: 1.5em;}
+body{min-width: 320px;color: #424242;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+li{list-style: none;}
+img{border: none;}
+a{text-decoration: none;color: #4a4a4a;}
+form{margin:0;padding: 0;}
+button,input,a{outline: none;border: none;}
+input{outline: none;margin: 0;padding: 0;}
+
+
+/*公用样式*/
+
+
+.clear:before,.clear:after{display: table;content: ''}
+.clear,.clear:after{clear: both;}
+.fr{float: right;}
+.fl{float: left;}
+.hide{display: none;}
+.show{display: block;}
+.oh{overflow: hidden;}
+.p2e{padding: 0 2rem;}
+.mt1e{margin-top: 1rem;}
+.posr{position: relative;}
+.posa{position: absolute;}
+.posf{position: fixed;}
+.table{display: table;width: 100%;}
+.tr{display: table-row;}
+.td{display: table-cell;}
+.container{max-width: 640px;margin: auto;margin-bottom: 0.5rem;background: #fff;font-size: 1.6rem;}
+.rel{position: relative;}
+.abs{position: absolute;}
+.center{text-align: center;}
+
+/*距离*/
+.paddingside10px{padding: 0 10px;}
+.paddingside5px{padding: 0 5px;}
+.pdr5{padding-right: 5px;}
+.pdr10{padding-right: 10px;}
+.marginside10px{margin: 0 10px;}
+.marginside5px{margin: 0 5px;}
+.marginbtm10px{margin-bottom: 10px;}
+.mgt10{margin-top: 10px;}
+.mgt30{margin-top: 30px;}
+.mgr5{margin-right: 5px;}
+.mgr10{margin-right: 10px;}
+.pdt5{padding-top: 5px}
+
+
+
+/*文字大小*/
+.fsize12{font-size: 12px;}
+.fsize14{font-size: 14px;}
+.fsize16{font-size: 16px;}
+.fsize18{font-size: 18px;}
+.fsize20{font-size: 20px;}
+.fbold{font-weight: bold;}
+.ellipsis{white-space: nowrap;overflow: hidden;text-overflow:ellipsis;}
+.textcenter{text-align: center;}
+.textcr{text-align: right;}

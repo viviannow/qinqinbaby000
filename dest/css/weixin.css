@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/**
+ *项目 亲亲宝贝wap
+ *时间 2016-05-18
+ *开发 高燕
+ */
+.body_m {
+  background: #f1f1f1; }
+
+.header {
+  background: #fff;
+  z-index: 999;
+  height: 44px;
+  line-height: 44px;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #f1f1f1;
+  text-align: center;
+  font-size: 16px;
+  color: #3b3b3b; }
+  .header .turnback {
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .header .turnback a {
+      display: block; }
+    .header .turnback img {
+      width: 8px;
+      height: 17px;
+      padding: 14px 10px 10px 10px; }
+
+.cnt {
+  max-width: 750px;
+  margin: 0 auto; }
+
+.cntfix {
+  padding-top: 44px; }
+
+.tkxq {
+  margin: 0 auto;
+  width: 81.25%; }
+  .tkxq ul li {
+    padding-top: 28px; }
+    .tkxq ul li h2 {
+      line-height: px;
+      font-size: 14px;
+      color: #3b3b3b; }
+    .tkxq ul li p {
+      line-height: 22px;
+      color: #818181; }
+
+.ddxq .pill li {
+  background: #fff;
+  margin-bottom: 5px;
+  line-height: 34px;
+  padding: 0 10px;
+  color: #4a4a4a;
+  font-size: 14px; }
+
+.ddxq .pill .address {
+  line-height: 18px;
+  padding: 10px 10px 5px; }
+  .ddxq .pill .address .icon {
+    border: 1px solid #3b3b3b;
+    border-radius: 2px;
+    margin-right: 5px;
+    line-height: 14px;
+    padding: 2px 3px; }
+  .ddxq .pill .address .name {
+    margin-right: 10px; }
+
+.ddxq .pill .zt {
+  padding: 10px 10px 0;
+  position: relative; }
+  .ddxq .pill .zt p {
+    font-size: 14px; }
+  .ddxq .pill .zt .icon {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 6px;
+    height: 12px; }
+
+.ddxq .pro_price {
+  background: #fff;
+  margin-bottom: 5px; }
+  .ddxq .pro_price h2 {
+    padding: 0 10px;
+    line-height: 28px;
+    font-size: 16px; }
+  .ddxq .pro_price dl {
+    padding: 10px 8px; }
+    .ddxq .pro_price dl dt:first-child {
+      width: 15.9375%; }
+      .ddxq .pro_price dl dt:first-child img {
+        border-radius: 10px; }
+    .ddxq .pro_price dl dt:last-child {
+      width: 21.25%;
+      text-align: center;
+      color: #f64c25; }
+    .ddxq .pro_price dl dt:last-child.btn {
+      height: 22px;
+      line-height: 22px;
+      border-radius: 2px;
+      border: 1px solid #3b3b3b;
+      color: #3b3b3b; }
+    .ddxq .pro_price dl dd {
+      width: 56.25%;
+      padding-left: 2%;
+      box-sizing: border-box; }
+      .ddxq .pro_price dl dd b {
+        color: #f64c25;
+        padding-right: 10px;
+        font-weight: normal;
+        font-size: 14px; }
+  .ddxq .pro_price .total {
+    text-align: right;
+    padding: 5px 10px 5px 0;
+    line-height: 22px;
+    color: #4a4a4a; }
+    .ddxq .pro_price .total p {
+      font-size: 14px; }
+      .ddxq .pro_price .total p span {
+        color: #f64c25; }
+        .ddxq .pro_price .total p span b {
+          font-size: 16px; }
+  .ddxq .pro_price .clumn {
+    border-bottom: 1px solid #f1f1f1;
+    line-height: 30px;
+    padding: 0 10px; }
+    .ddxq .pro_price .clumn span:last-child {
+      color: #666666;
+      line-height: 18px; }
+
+.ddxq .btmbtn {
+  background: #fff;
+  padding: 8px 10px; }
+  .ddxq .btmbtn a {
+    border: 1px solid #3b3b3b;
+    width: 76px;
+    height: 34px;
+    line-height: 34px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px; }
+
+.ddxq .btmbtntwo a {
+  width: 45.3125%; }
+  .ddxq .btmbtntwo a:last-child {
+    background: #00b9ef;
+    border-color: #00b9ef;
+    color: #fff; }
+
+.tkstep {
+  background: #f1f1f1;
+  color: #3b3b3b; }
+  .tkstep .sec {
+    background: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-top: 5px; }
+    .tkstep .sec.tkprocess {
+      margin-top: 0; }
+    .tkstep .sec img {
+      width: 51px;
+      height: 51px; }
+    .tkstep .sec input, .tkstep .sec select, .tkstep .sec textarea {
+      background: #f1f1f1;
+      border: none;
+      color: #818181;
+      width: 100%;
+      border-radius: 3px; }
+    .tkstep .sec dl {
+      line-height: 22px; }
+    .tkstep .sec dt {
+      padding-right: 3.125%;
+      white-space: nowrap; }
+  .tkstep .tkprocess h2 {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px; }
+  .tkstep .tkprocess p {
+    border-top: 1px solid #f1f1f1;
+    color: #818181;
+    padding: 5px 0; }
+    .tkstep .tkprocess p span {
+      color: #4a4a4a; }
+  .tkstep .tknumb dl {
+    line-height: 30px;
+    margin-bottom: 10px; }
+  .tkstep .tknumb dt {
+    width: 25%;
+    line-height: 30px;
+    white-space: nowrap; }
+  .tkstep .tknumb dd {
+    width: 70%;
+    padding-left: 2%;
+    box-sizing: border-box; }
+    .tkstep .tknumb dd select {
+      line-height: 30px;
+      height: 30px; }
+    .tkstep .tknumb dd input {
+      line-height: 30px;
+      height: 30px; }
+    .tkstep .tknumb dd textarea {
+      height: 80px; }
+  .tkstep .tkpro h2 {
+    line-height: 30px;
+    font-size: 16px; }
+  .tkstep .tkpro h3 {
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 14px; }
+  .tkstep .tkpro dl.prodetaill {
+    padding-bottom: 10px; }
+  .tkstep .tkpro dt {
+    color: #818181;
+    width: 18.28125%; }
+  .tkstep .tkpro dd {
+    width: 75%; }
+    .tkstep .tkpro dd ul {
+      width: 100%; }
+  .tkstep .tkpro li {
+    padding-right: 3.125%; }
+  .tkstep .tkbtn {
+    text-align: center;
+    padding: 8px 10px; }
+    .tkstep .tkbtn a {
+      display: block;
+      background: #00b9ef;
+      height: 36px;
+      line-height: 36px;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 16px; }
+
+.tkupload .tkpro dl {
+  padding-bottom: 10px; }
+  .tkupload .tkpro dl.prodetaill h3, .tkupload .tkpro dl.prodetaill p {
+    color: #3d3d3d; }
+  .tkupload .tkpro dl dt {
+    line-height: 30px;
+    color: #3b3b3b; }
+  .tkupload .tkpro dl dd {
+    color: #818181;
+    line-height: 30px; }
+    .tkupload .tkpro dl dd select {
+      height: 30px; }
+    .tkupload .tkpro dl dd input {
+      height: 30px; }
+    .tkupload .tkpro dl dd textarea {
+      height: 36px; }
+    .tkupload .tkpro dl dd p {
+      color: #818181;
+      line-height: 18px; }
+    .tkupload .tkpro dl dd li {
+      width: 51px;
+      height: 51px;
+      overflow: hidden; }
+      .tkupload .tkpro dl dd li .uploadimg {
+        height: 51px;
+        width: 51px;
+        overflow: hidden;
+        position: relative;
+        margin-top: 2px; }
+      .tkupload .tkpro dl dd li .uploadimg img {
+        width: 51px; }
+      .tkupload .tkpro dl dd li .uploadimg input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 2; }
+      .tkupload .tkpro dl dd li .uploadimg .upimgdiv {
+        position: relative; }
