@@ -1,0 +1,99 @@
+/**
+ * 公用样式  
+ * @copyright &nbsp;
+ * @website qinqinbaby.com
+ * @date: 2016-05-18
+ */
+html,body,div,p,header,ul,ol,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;font-size: 14px;}
+html,body,p,header,h2,h3,h4,h5,h6{line-height: 1.8em;}
+form{margin:0;padding: 0;}
+body{min-width: 320px;color: #424242;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+li{list-style: none;}
+img{width: 100%;max-width: 100%;}
+a{text-decoration: none;color: #4a4a4a;font-size: 12px;}
+img{border: none;}
+dl,dt,dd{margin: 0;padding: 0}
+button{outline: none;border: none;}
+input{outline: none;margin: 0;padding: 0;}
+textarea,select{outline: none;}
+textarea{resize:none;}
+select{width: 100%;height: 100%;border: none;color: #adadad;margin-left: -5px;}
+
+/*公用样式*/
+.clear:before,.clear:after{display: table;content: ''}
+.clear,.clear:after{clear: both;}
+.fr{float: right;}
+.fl{float: left;}
+.mindex{
+	color:#818181;
+	max-width:750px;
+	margin:0 auto;
+
+	.sec{
+		padding:0 10px;
+		font-size: 14px;
+		h2{
+			color:#3b3b3b;
+			font-size: 16px;
+		}
+	}
+	.sec1{
+		padding-bottom:18px;
+		h2{
+			padding-top:7px;
+			height: 38px;line-height:38px;
+		}
+		p{padding-bottom:16px;}
+	}
+	.sec2{
+		.secinner{
+			background:#fff;
+			padding:0 10px 10px;;
+		}
+		background:#f1f1f1;
+		padding:5px 0px 0px;
+		h2{font-weight:bold;line-height:30px;}
+		p{line-height:24px;}
+		.tp{padding-top:10px;}
+		.btm{position: relative;
+			border-top:1px solid #f1f1f1;
+			padding-top:10px;padding-bottom:40px;
+			span{font-weight:normal;font-size:12px;}
+			.logo{position:absolute;right:10%;bottom:15%;width:12.5%;}
+		}
+		
+	}
+
+}
+.mindex2{
+	padding-bottom:25px;
+	max-width:750px;
+	margin:0 auto;
+	p{color:#818181;font-size:14px;padding:5px 10px;}
+	h2{font-size:16px;font-weight:bold;padding:0 10px;line-height:40px;}
+	h3{line-height:42px;;font-size:14px;font-weight:bold;padding:0 10px;}
+	h4{padding:0 10px;font-size:14px;line-height:24px;}
+	.sec{background:#fff;}
+	.sec1 {
+		h3{line-height:18px;font-weight:normal;}
+	}
+	.sec2,.sec3{margin-top:5px;}
+	.subsec{border-top:1px solid #f1f1f1;}
+	.sec3 .subdiv{
+		background:#f1f1f1;padding:10px 0;
+		img{display:block;margin:0 auto;}
+	}
+	.sec3 .subdiv01 img{width:86.875%;}
+	.sec3 .subdiv02 img{width:86.875%;}
+	.sec3 .subdiv03 img{width:100%;}
+	.sec3 .subdiv04 img{width:100%;}
+	.sec3 .subdiv05 img{width:100%;}
+	.sec3 .subdiv06 img{width:75.78125%;}
+	.sec3 .subdiv07 img{width:86.25%;}
+	.sec3 .subdiv08 img{width:86.71875%;}
+	.sec3 .subdiv09 img{width:86.71875%;}
+	.sec3 .subdiv10 img{width:90.46875%;}
+	.sec3 .subdiv11 img{width:36.40625%;}
+	.sec3 .subdiv12 img{width:65.15625%;}
+}

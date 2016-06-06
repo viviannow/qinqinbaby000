@@ -1,0 +1,188 @@
+/**
+ *项目 亲亲宝贝wap
+ *时间 2016-05-18
+ *开发 高燕
+ */
+.body_m{background:#f1f1f1;}
+.header{background:#fff;z-index: 999;height:44px;line-height:44px;position: fixed;width:100%;border-bottom:1px solid #f1f1f1;text-align:center;font-size:16px;color:#3b3b3b;
+	.turnback{position:absolute;left:0;top:0;
+		a{display:block;}
+		img{width:8px;height:17px;padding:14px 10px 10px 10px;}
+	}
+}
+.cnt{max-width:750px;margin:0 auto;}
+.cntfix{padding-top:44px;}
+
+
+// 退款详情
+.tkxq{
+	margin:0 auto;
+	width:81.25%;
+	ul{
+		
+		li{
+			padding-top:28px;
+			h2{line-height:px;font-size:14px;color:#3b3b3b;}
+			p{line-height:22px;color:#818181;}
+		}
+	}
+
+}
+// 订单状态 ： 订单状态已发货  订单状态已付款 取消退款 退款中
+.ddxq{
+	.pill{
+		li{background:#fff;margin-bottom:5px;line-height:34px;padding:0 10px;color:#4a4a4a;font-size:14px;}
+		.address{
+			line-height: 18px;padding:10px 10px 5px;
+			.icon{border:1px solid #3b3b3b;border-radius:2px;margin-right:5px;line-height:14px;padding:2px 3px;}
+			.name{margin-right:10px;}
+		}
+		.zt{padding:10px 10px 0;position:relative;
+			p{
+				font-size:14px;
+
+			}
+			.icon{position:absolute;right:10px;top:12px;;width:6px;height:12px;}
+
+		}
+
+	}
+	.pro_price{
+		background:#fff;margin-bottom:5px;
+		h2{padding: 0 10px;line-height:28px;font-size:16px;}
+		dl{
+			padding:10px 8px;
+			dt:first-child{
+				width:15.9375%;
+				img{border-radius:10px;}
+			}
+			dt:last-child{width:21.25%;text-align:center;color:#f64c25;}
+			dt:last-child.btn{height:22px;line-height:22px;border-radius:2px;border:1px solid #3b3b3b;color:#3b3b3b;}
+			dd{
+				width:56.25%;
+				padding-left:2%;box-sizing:border-box;
+				b{color:#f64c25;padding-right:10px;font-weight:normal;font-size:14px;}
+			}
+
+
+		}
+		.total{
+			text-align: right;padding:5px 10px 5px 0;line-height:22px;color:#4a4a4a;
+			p{
+				font-size:14px;
+				span{color:#f64c25;
+					b{font-size: 16px;}
+				}
+			}
+		}
+		.clumn{
+			border-bottom:1px solid #f1f1f1;line-height:30px;padding:0 10px;
+			span:last-child{
+				color:#666666;line-height:18px;
+			}
+		}
+	}
+	.btmbtn{
+		background:#fff;padding:8px 10px;
+		a{border:1px solid #3b3b3b;width:76px;height:34px;line-height:34px;display:block;text-align:center;font-size:14px;border-radius:3px;}
+	}
+	.btmbtntwo{
+		a{
+			width:45.3125%;
+			&:first-child{}
+			&:last-child{background:#00b9ef;border-color:#00b9ef;color:#fff;}
+		}
+	}
+
+}
+// 1-3退款申请中  2-1平台同意退货退款 取消申请详情 上传物流单号
+.tkstep{
+	background:#f1f1f1;color:#3b3b3b;
+	.sec{
+		background:#fff;
+		font-size: 14px;
+		padding:5px 10px ;
+		margin-top:5px;
+		&.tkprocess{margin-top:0;}
+		img{width:51px;height:51px;}
+		input,select,textarea{background:#f1f1f1;border:none;color:#818181;width:100%;border-radius:3px;}
+		dl{line-height:22px;}
+		dt{padding-right:3.125%;white-space:nowrap;}
+	}
+	// 进程
+	.tkprocess{
+		h2{height:34px;line-height:34px;font-size:14px;}
+		p{
+			border-top:1px solid #f1f1f1;color:#818181;padding:5px 0;
+			span{color:#4a4a4a}
+		}
+	}
+	
+	// 物流单号填写
+	.tknumb{
+		dl{line-height:30px;margin-bottom:10px;}
+		dt{width:25%;line-height:30px;white-space:nowrap;}
+		dd{
+			width:70%;padding-left:2%;box-sizing:border-box;
+			select{line-height:30px;height:30px;}
+			input{line-height:30px;height:30px;}
+			textarea{height:80px;}
+
+		}
+	}
+	// 申请退款商品 退款信息
+	.tkpro{
+		h2{line-height:30px;font-size:16px;}
+		h3{height:40px;line-height:20px;overflow: hidden;font-size:14px;}
+		dl.prodetaill{padding-bottom:10px;}
+		dt{
+			color:#818181;
+			width:18.28125%;
+		}
+		dd{
+			width:75%;
+			ul{width:100%;}
+		}
+		li{padding-right:3.125%;}
+	}
+	// 退款详情
+	
+	// 按钮
+	
+	.tkbtn{
+		text-align:center;
+		padding:8px 10px;
+		a{display:block;background:#00b9ef;height:36px;line-height:36px;border-radius:5px;color:#fff;font-size:16px;}
+	}
+	
+}
+// 1-2订单状态申请退款
+.tkupload{
+	.tkpro{
+		dl{
+			&.prodetaill{
+				h3,p{color:#3d3d3d;}
+			}
+		padding-bottom:10px;
+		dt{line-height:30px;color:#3b3b3b;}
+		dd{color:#818181;
+			line-height:30px;
+			select{
+				height: 30px;
+			}
+			input{height:30px;}
+			textarea{height:36px;}
+			p{color:#818181;line-height:18px;}
+			li{
+				width:51px;height:51px;overflow:hidden;
+				.uploadimg {height: 51px;width: 51px;overflow: hidden;position: relative;margin-top: 2px}
+				.uploadimg img{width: 51px;}
+				.uploadimg input{position: absolute;left: 0;top: 0;width: 100%;height: 100%;opacity: 0;z-index: 2;}
+				.uploadimg .upimgdiv{position: relative;}
+
+			}
+		}
+	}
+	}
+	
+}

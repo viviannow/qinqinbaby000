@@ -1,0 +1,213 @@
+/**
+ *项目 亲亲宝贝-福袋
+ *时间 2016-05-31
+ *开发 高燕
+ */
+// 定义动画
+	@keyframes mycloud{
+       0%{transform: translate3d(0px,0px,0px);}
+       50%{transform: translate3d(0px,20px,0px);}
+       100%{transform: translate3d(0px,0px,0px);}
+    } 
+
+    @-webkit-keyframes mycloud{
+       0%{transform: translate3d(0px,0px,0px);}
+       50%{transform: translate3d(0px,20px,0px);}
+       100%{transform: translate3d(0px,0px,0px);}
+    } 
+
+
+
+
+// 背景
+.bgrepeat{
+	background:#fb567e url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/bg.png) left top repeat;max-width:750px;margin:0 auto;
+}
+// 弹出层
+.cm_login{display:none;
+	background:rgba(0,0,0,0.5);position: fixed;left:0;top:0;width:100%;height:100%;
+	.inner{padding:40px 0 28px;min-width:300px;;
+		width:94.5%;margin:0 auto;background:#fb567e url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/bg.png) left top repeat;
+		position: absolute;top: 50%; left: 50%;  
+  -webkit-transform: translate(-50%,-50%);  
+      -ms-transform: translate(-50%,-50%);  
+          transform: translate(-50%,-50%);  
+		.close{background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/btnclose.png) left top no-repeat;width:20px;height:20px;position:absolute;right:0px;top:0px;background-size:20px 20px;}
+		dl{padding-bottom:10px;line-height:26px;height:26px;color:#fff;
+			&.yzm{
+					input{width:44%;margin-right:2%;}
+			};
+			dt{width:27%;text-align:center;}
+			dd{
+				width:72%;
+				
+			}
+			input{background:#fff;border:none;height:26px;border-radius:3px;outline:none;width:90%;color:#3b3b3b;}
+		}
+		a{background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/btnlogin.png) left top no-repeat;width:130px;height:35px;display:block;background-size:130px 35px;margin:15px auto 0;}
+	}
+}
+// 头部 返回 刷新
+.cm_tp{position:absolute;left:0;top:0;width:100%;
+	.inner{
+		margin:10px 15px 0;
+		a{
+			width:25px;height:25px;display:block;
+			&.fl{background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/topback.png) left top no-repeat;background-size:25px 25px;}
+			&.fr{background: url(http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/fudai/toprefresh.png) left top no-repeat;background-size:25px 25px;}
+		}
+	}
+
+}
+// 活动规则
+.rules{color:#fff;font-size:14px;text-align:center;;;;;
+	.tp{
+		img{width:40.625%;margin:28px auto 0}
+	}
+	.md{
+		text-align:left;border:2px solid #452018;border-radius:5px;margin:10px 15px 0;background:#fff;color:#000000;padding:2%;position:relative;
+		.abs{position:absolute;top:23%;right:-2.5%;width:7.1875%;}
+	}
+	.btm{padding-bottom:30px;
+		p{line-height:48px;}
+		img{width:40.46875%}
+	}
+}
+
+.topbanner{
+	position:relative;
+	.shake{width:13px;height:18px;
+		position: absolute;top: 0%; left: 48%;  
+		  -webkit-transform: translate(-9%,-50%); 
+		      -ms-transform: translate(-9%,-50%); 
+		          transform: translate(-9%,-50%);
+		         animation: mycloud 3s linear infinite;
+	}
+}
+// 福袋-首页
+.secfudai{
+	width:100%;color:#fff;
+	li{
+		position:relative;
+		.subsec{position:absolute;}
+		.subsec1{
+			top:34%;left:21.09375%;font-size:18px;line-height:26px;
+			.tp{font-size:20px;
+				b{font-size:30px;}
+			}
+		}
+		.subsec2{top:16%;right:2%;font-size:18px;transform: rotate(-15deg);}
+		.subsec3{bottom:30%;right:5%;font-size:18px;}
+		.subsec4{bottom:15%;right:3%;width:31.25%;}
+	}
+	
+}
+
+// 产品信息
+.secpro{padding-top:40px;
+	.tp{width:73.59%;margin:0 auto;
+		.proimg{display:block;margin:0 auto;width:100%;box-shadow:0 0 15px rgba(0,0,0,0.3)}
+		p{color:#fff;line-height:30px;padding-top:5px;white-space:nowrap;border-bottom:1px dashed #fc96a7;}
+		dl{margin-top:9px;
+			dt{text-align:right;width:30%;
+				&:nth-child(2){color:#fff600;font-size:40px;padding-top:10px;width:35%;text-align:center;}
+				del{font-size:12px;padding-right:13px;}
+				p{color:#000000;border:none;font-size:14px;line-height:18px;padding:0;}
+			}
+			dd{
+				width:76px;height:24px;margin-top:10px;margin-right:10px;width:30%;
+
+			}
+
+		}
+	}
+	.md{padding:0 1.5625%;
+		display: -webkit-box;      
+  display: -moz-box;        
+  display: -ms-flexbox;     
+  display: -webkit-flex; 
+  display: flex;            
+		.list{
+			padding:15px 1.5625% 8px;;;
+			 -webkit-box-flex: 1;    
+				-moz-box-flex: 1;                     
+				 -webkit-flex: 1;        
+				     -ms-flex: 1;            
+				         flex: 1;               
+		}
+	}
+	.btm{position:relative;
+		img{display:block;width:98%;margin:0 auto;}
+		p{position:absolute;width:100%;height:30px;line-height:30px;font-size:14px;text-align:center;;white-space:nowrap;
+				position: absolute;top: 50%; left: 50%;  
+			  -webkit-transform: translate(-50%,-50%); 
+			      -ms-transform: translate(-50%,-50%); 
+			          transform: translate(-50%,-50%);
+			b{color:#e80e04;font-size:30px;}
+		}
+
+	}
+
+}
+
+/* 微信领取信息 */
+.secwx{
+	color:#fff;;position:relative;
+	.posabs1{position:absolute;left:0%;top:-0%;width:25px;height:36px;}
+	.wmsg{
+		font-size: 12px;
+		img{width:50px;height:50px;}
+		dt{padding-right:2%}
+	}
+	.sec01{
+		.tp{
+			padding-top:15px;
+			.wmsg{padding-left:10%;width:71.375%;margin:0 auto;}
+		}
+		.md{
+			margin-top:10px;position:relative;
+			img{width:68.125%;margin:0 auto;display:block;}
+			.posabs2{position:absolute;left:15%;top:-4%;width:14px;height:20px;}
+			p{color:#ff0000;font-size:30px;
+			position: absolute;top: 50%; left: 50%;  
+		  -webkit-transform: translate(-50%,-50%); 
+		      -ms-transform: translate(-50%,-50%); 
+		          transform: translate(-50%,-50%);
+		          b{font-size:60px;}
+			}
+		}
+		.btm{
+			padding:23px 10px 11px;margin:0 10px;border-bottom:1px dashed #fc96a7;
+			a{
+				width: 48%;
+			}
+		}
+	}
+	.sec02{
+		.tp{
+			border:1px solid #000;border-radius:5px;margin:19px 10.625% 12px;;
+			.tpinner{
+				background:#fff;border-radius:5px;margin:1.5625%;color:#f94362;text-align:center;font-size:14px;white-space:nowrap;padding:10px 0;
+				span{color:#000}
+			}
+		}
+		.md{
+			.wmsg{
+				margin:0 6.875%;padding:10px 0;
+				dt{padding-right:5%;}
+				dd{padding-top:5px;}
+			}
+		}
+		.btm{
+			margin:0 6.875%;background:#fff;
+			ul{padding-bottom:10px;}
+			li{width:28.46875%;padding:10px 0 0 10px;border-radius:5px;overflow: hidden}
+		}
+	}
+}
+/* 微信分享 */
+.wxshare{
+	position:fixed;left:0;top:0;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.5);
+	img{width:50%;position:absolute;right:0;top:0;}
+
+}

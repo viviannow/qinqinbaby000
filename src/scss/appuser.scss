@@ -1,0 +1,65 @@
+/**
+ * 亲亲宝贝商城 内嵌页面  
+ * @copyright &高燕
+ * @website qinqinbaby.com
+ * @date: 2016-06-16
+ */
+/*公用样式*/
+html,body,div,p,header,ul,ol,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;font-size: 14px;}
+html,body,p,header,h2,h3,h4,h5,h6{line-height: 1.8em;}
+form{margin:0;padding: 0;}
+body{min-width: 320px;color: #424242;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+li{list-style: none;}
+img{width: 100%;max-width: 100%;}
+a{text-decoration: none;color: #4a4a4a;font-size: 12px;}
+img{border: none;}
+dl,dt,dd{margin: 0;padding: 0}
+button{outline: none;border: none;}
+input{outline: none;margin: 0;padding: 0;}
+textarea,select{outline: none;}
+textarea{resize:none;}
+select{width: 100%;height: 100%;border: none;color: #adadad;margin-left: -5px;}
+
+.clear:before,.clear:after{display: table;content: ''}
+.clear,.clear:after{clear: both;}
+.fr{float: right;}
+.fl{float: left;}
+// 积分规则 score-rule
+// 
+.score-rule{color:#3b3b3b;margin:0 auto;
+	max-width:750px;
+	padding:0 3.125%;box-sizing:border-box;
+	.sec{padding-top:18px;
+		h2{
+			font-size:16px;line-height:18px;padding-left:9px;position:relative;
+			&:before{position: absolute;left:0;top:0;content:'';width:6px;height:18px;background:#00b9ef;}
+		}
+		.sub_sec{font-size:16px;padding-left:3.125%;padding-top:10px;
+			h3{font-weight:bold;line-height:18px;}
+			p{line-height:18px;}
+		
+		}
+		ul{
+			border-bottom:1px solid #bababa;
+		}
+		.sub_secul1 ul{line-height:20px;padding:2px 0;text-align:center;
+			li:nth-child(1){width:20%;}
+			li:nth-child(2){width:30%;}
+			li:nth-child(3){width:50%;text-align:left;}
+		}
+		.sub_secul2 ul{
+			li:nth-child(1){width:15%;text-align:center;display:table-cell;vertical-align:middle;}
+			li:nth-child(2){width:85%;}
+		}
+		.sub_secul3 ul{width:50%;
+			li{width:50%;text-align:center;line-height:26px;}
+		}
+		.tips{
+			color:#999999;font-size:12px;padding-left:3.125%;line-height:18px;margin-top:8px;
+			p{font-size:12px;}
+		}
+		.v5p{padding-top:10px;}
+	}
+
+}

@@ -1,0 +1,96 @@
+.homenew{padding-bottom:62px;
+	// 头部 1190
+	.sec_header{
+		width: 1190px;margin:0 auto;
+		.logo{padding:30px 0 27px 0;width:346px;height:63px;}
+		.sec_search{
+			padding:36px 89px 0 0;
+			input{border:2px solid #00b9ef;height:38px;width:480px;padding:0 5px;}
+			.btn{font-size:18px;;width:100px;height:42px;line-height:42px;text-align:center;background:#00b9ef;color:#fff;}
+		}
+		.btm{
+			line-height: 36px;
+			a{
+				padding:0 10px;font-size:12px;font-family:"宋体";border-left:1px solid #d9d9d9;
+				&.first{border:none;}
+				&.active{color:#00b9ef;}
+			}
+		}
+	}
+	// nav
+	.nav{
+		border-top:1px solid #d9d9d9;height:40px;line-height:40px;
+		.inner{
+			width:1190px;margin:0 auto;
+			a{
+				color:#666666;font-size:18px;width:140px;text-align:center;display:inline-block;
+				&.active{color:#ff0000;}
+			}
+		}
+	}
+	.subnav{
+		background:url(http://p0.qinqinbaby.com/Resource/Images/home/indexnew/nav.jpg) center top no-repeat;
+	}
+	// 主区
+	.sec_main{font-family:"微软雅黑";
+		height: 922px;background:url(http://p0.qinqinbaby.com/Resource/Images/home/indexnew/backg.png) center top no-repeat;
+		.inner{
+			width:1080px;margin:0 auto;
+			.iphone{
+				width:359px;height:749px;margin-top:97px;background:url(http://p0.qinqinbaby.com/Resource/Images/home/indexnew/phone.png) left top no-repeat;
+				ul{
+					position: relative;margin:103px 0 0 32px;width:300px;height:535px;background:#fff;
+					li{font-family:"微软雅黑";
+						position:absolute;left:0;top:0;display:none;
+						&.active{display:block;}
+					}
+				}
+			}
+			.iphonemsg{
+				padding-top:95px;color:#fff;
+				.tp{
+					.words{background:url(http://p0.qinqinbaby.com/Resource/Images/home/indexnew/sc.png) center top no-repeat;width:672px;height:162px;margin-right:-100px;}
+					.ewm{display:block;background:url(http://p0.qinqinbaby.com/Resource/Images/home/indexnew/ewm.png) left top no-repeat;width:211px;height:257px;margin:-35px auto 0;}
+				}
+				.md{overflow: hidden;
+					width:450px;height:150px;margin:20px auto 0;position:relative;
+					.op{position:absolute;left:0;bottom:0;}
+					}
+				}
+				.btm{
+					margin:40px auto 0;width:550px;
+					li{cursor:pointer;
+						width:20%;text-align:center;
+						.sec_tp{visibility:hidden;font-family:"微软雅黑";
+							background:url(http://p0.qinqinbaby.com/Resource/Images/home/indexnew/bubble.png) center top no-repeat;
+							width:100%;height:54px;text-align:center;color:#2997b7;font-size:14px;padding-top:11px;line-height:16px;
+						}
+						.sec_btm{
+							.line{margin:3px auto 24px;height:8px;width:74px;background:#2997b7;}
+							h2{font-size:18px;color:#108db1;}
+							p{white-space:nowrap;font-size:14px;color:#108db1;font-family:"微软雅黑";padding-top:5px;}
+						}
+						&.active{
+							.sec_tp{visibility:visible;}
+							.sec_btm{.line{visibility:hidden;}}
+							h2{color:#fff;}
+							p{color:#fff;}
+						}
+						
+
+					}
+				}
+			}
+	}
+	// 承诺
+	.sec_promise{
+		width:1080px;margin:98px auto 0;
+		.tp{
+			li{
+				width:33.333%;text-align:center;
+				p{line-height:116px;padding-bottom:46px;font-size:28px;color:#3d4649;font-weight:normal;}
+			}
+		}
+		.btm{background:url(http://p0.qinqinbaby.com/Resource/Images/home/indexnew/promis.png) center center no-repeat;height:138px;width:1078px;border:1px solid #e5e5e5;}
+	}
+}
