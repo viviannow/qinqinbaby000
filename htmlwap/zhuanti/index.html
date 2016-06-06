@@ -1,0 +1,506 @@
+<!DOCTYPE >
+<html>
+<head>
+<meta charset="utf-8">
+<title>端午节app</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<style>
+/*common 可以脱离原app*/
+*{-webkit-tap-highlight-color:transparent}
+* html .clearfix{height:1%}
+@charset "utf-8";body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,table,textarea{font-size:16px;line-height:1.25em}
+body{margin:auto;max-width:640px;min-width:320px;color:#333;font-size:1em;font-family:'microsoft yahei',Verdana,Arial,Helvetica,sans-serif}
+fieldset,img{border:0}
+img{max-width:100%}
+ol,ul{list-style:none}
+address,em{font-style:normal}
+a{color:#333;text-decoration:none}
+table{border-collapse:collapse}
+.posr{position:relative}
+.clearfix:after{clear:both;display:block;visibility:hidden;height:0;content:" ";font-size:0}
+.fl{float:left}
+.fr{float:right}
+/*页面样式*/
+.preheat .banner{width: 100%;min-width: 320px;}
+.preheat a{display: block;width: 100%;outline: none;}
+.preheat img{width: 100%;display: block;}
+.preheat .preheatvip{overflow: hidden;}
+.preheat .preheatvip>img{margin: 2px auto 0;width:93.75%; }
+.preheat .preheatvip3 ul{margin: .5%}
+.preheat  .ulthree li{width:50%;box-sizing:border-box;}
+/*浮动层*/
+.actBtn{
+    position: fixed;left: 0;top: 20%;width:17.96875%;z-index: 9999;
+            top: 50%; left: 0;  
+      -webkit-transform: translate(0,-50%);  
+          -ms-transform: translate(0,-50%);  
+              transform: translate(0,-50%);  
+}
+.actDiv{
+    position: fixed;left: -100%;top: 10%;z-index: 9999;background: rgba(0,0,0,0.5);width: 40%; 
+}
+.actDiv .close{padding-bottom: 5px}
+.actDiv .close img{width: 20px;height: 20px;display: block;margin:0 auto;}
+.actDiv .secbig{background: #fff;padding: 0 10px;padding-bottom: 10px;}
+.actDiv .secbig a{display: block;border-bottom: 2px dashed #757575;height: 34px;line-height: 34px;text-align: center;}
+ </style>
+</head>
+
+<body class="colf8">
+<div id="section_container ">
+<!-- preheat -->
+    <div class="preheat bcg_00b4ff">
+            <!-- -->
+            <article class="banner">
+                <img src="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_01.jpg" alt=""/>
+                <img src="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_02.jpg" alt=""/>
+                <img src="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_03.jpg" alt=""/>
+                <img id="slideto00" src="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_04.jpg" alt=""/>
+                <ul class="clearfix ulthree">
+                    <li class="fl" style="width:48.125%;">
+                        <a href="javascript:;" onclick="getdata('product',10052963,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_05.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl" style="width:51.875%;">
+                        <a href="javascript:;" onclick="getdata('product',10053703,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_06.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl" style="width:56.25%;">
+                        <a href="javascript:;" onclick="getdata('product',10058598,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_07.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl" style="width:43.75%;">
+                        <a href="javascript:;" onclick="getdata('product',10062373,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_08.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <a id="slideto01" href="javascript:;" onclick="getdata('shop',21712,3,0)"><img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_09.jpg" alt=""/></a>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10054286,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_10.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053425,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_11.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053576,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_12.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053454,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_13.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053383,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_14.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053516,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_15.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053812,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_16.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053507,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_17.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10054024,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_18.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053492,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_19.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053532,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_20.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10052983,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_21.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10052967,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_22.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053675,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_23.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10058216,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_24.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10058199,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_25.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <a id="slideto02" href="javascript:;" onclick="getdata('activity',263,0,0)"><img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_26.jpg" alt=""/></a>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053565,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_27.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053503,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_28.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053433,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_29.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053525,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_30.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10053806,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_31.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10054241,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_32.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10054590,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_33.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10058155,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_34.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <a id="slideto03" href="javascript:;" onclick="getdata('vip',2169,0,0)"><img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_35.jpg" alt=""/></a>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10017941,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_36.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10017939,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_37.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10017925,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_38.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10017919,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_39.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10017867,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_40.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10023773,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_41.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10023757,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_42.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10023749,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_43.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10023739,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_44.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10014213,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_45.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10017999,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_46.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10023631,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_47.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10023641,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_48.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10023841,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_49.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <a id="slideto04" href="javascript:;" onclick="getdata('activity',262,0,0)"><img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_50.jpg" alt=""/></a>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10051106,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_51.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10046475,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_52.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10062985,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_53.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10009317,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_54.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10038315,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_55.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10038281,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_56.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10024403,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_57.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10038593,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_58.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <a id="slideto05" href="javascript:;" onclick="getdata('shop',20511,3,0)"><img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_59.jpg" alt=""/></a>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10039047,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_60.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10038549,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_61.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10044463,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_62.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10039121,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_63.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10040395,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_64.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10040465,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_65.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10038567,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_66.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10039491,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_67.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <a id="slideto06" style="position:relative" href="javascript:;" onclick="getdata('activity',261,0,0)"><img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_68.jpg" alt=""/></a>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10045185,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_69.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10017499,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_70.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10058591,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_71.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10062993,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_72.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix ulthree">
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10062516,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_73.jpg" alt=""/>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;" onclick="getdata('product',10063343,'N','N')">
+                            <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_74.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+                <img src="http://p0.qinqinbaby.com/Resource/Images/zt/white.png" class="lazy" data-original="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/dragon_75.jpg" alt=""/>
+            </article>
+    </div>
+</div>
+<!-- 浮动层 -->
+<div class="actBtn"><img src="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/actBtn.png" alt=""></div>
+
+<div class="actDiv">
+    <div class="close"> <img src="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/close.png" alt=""></div>
+    <img src="http://p0.qinqinbaby.com/Resource/Images/zt/2016/06/dragon/topimg.png" alt="" class="secsm">
+    <div class="secbig">
+        <a href="#slideto00" class="btnslide">特价爆款</a>
+        <a href="#slideto01" class="btnslide">吃遍全球</a>
+        <a href="#slideto02" class="btnslide">幸福甜食</a>
+        <a href="#slideto03" class="btnslide">营养坚果</a>
+        <a href="#slideto04" class="btnslide">舌尖荨蜜</a>
+        <a href="#slideto05" class="btnslide">遇上红酒</a>
+        <a href="#slideto06" class="btnslide">果蔬生鲜</a>
+    </div>
+</div>
+<script type="text/javascript" src="http://p0.qinqinbaby.com/Resource/Js/common/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="http://p0.qinqinbaby.com/Resource/Js/wap/jquery.lazyload.js"></script>
+<script src="../../dest/js/jquery.lazyload.js"></script>
+<script>
+    $(function () {
+        $("img.lazy").lazyload();
+    });
+
+function getdata(sign,id,type1,type2){
+    window.location = "/getdata?sign="+sign+"&id="+id+"&type1="+type1+"&type2="+type2; 
+}
+// 悬浮动画
+$('.actBtn').click(function(event) {
+    $('.actDiv').animate({ 
+        left: 0,
+     }, 500);
+});
+$('.close').click(function(event) {
+    $('.actDiv').animate({ 
+        left: '-100%',
+     }, 500);
+
+});
+/*$('.btnslide').click(function(event) {
+    $('.slideto06').animate({ 
+        top: '0',
+     }, 500);
+    alert(1)
+});*/
+
+</script>
+</body>
+</html>

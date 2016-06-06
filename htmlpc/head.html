@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link rel="stylesheet" href="http://p0.qinqinbaby.com/Resource/Css/common/common.css" />
+<link rel="stylesheet" href="../dest/css/newindex.css" />
+<link rel="stylesheet" href="http://s0.qinqinbaby.com/Resource/Css/home/header_public2.css">
+<style>
+    .xqzh-header-bg{background: #fff;}
+</style>
+
+</head>
+
+<body>
+<div class="header-main">
+    <div class="xqzh-header-bg gray_header">
+        <div class="xqzh-header-nav clear">
+            <ul class="xqzh-header-nav_list xqzh-fst">
+                <li><a class="xqzh-hnl-item " target="_blank" href="http://www.qinqinbaby.com">亲亲宝贝</a></li>
+                
+                <!--  <li><a class="xqzh-hnl-item " target="_blank" href="#">爱美丽</a></li>-->
+            </ul>
+            <div class="xqzh-header-nav_contact">
+                <span class="xqzh-hnt-phone xqzh-far" style="color:#8d8d8d;font-size:12px;">客服电话：400 610 9993 周一~周日 9:00~21:00</span>
+                <!--                <span class="xqzh-hnt-phone xqzh-far xqzh-farqq">福利群：152479351</span>-->
+                <ul data-hover="xqzh-hnt-member_hover" class="xqzh-hnt-member">
+                    <li class="xqzh-hnt-member_top"><a rel="nofollow" target="_blank" href="/home/footer/about.html">关于亲亲</a></li>
+                    <!--                        <li><a href="--><!--?//= U('Seller/index/index') ?--><!--" target="_blank" rel="nofollow">去商家中心</a></li>-->
+                    <!--                    <li></li>-->
+                    <li><a rel="nofollow" target="_blank" href="/home/footer/touch.html">联系我们</a></li>
+                    <li><a rel="nofollow" target="_blank" href="/home/footer/job.html">招贤纳士</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="xqzh-header-toolwp clear">
+            <div class="xqzh-header-tool">
+                <div class="xqzh-login-before">
+                                            <!--                登录前-->
+                        <span class="fla"></span><span>您好</span>，欢迎来到亲亲宝贝！请&nbsp;
+                        <a style="color: #f00180" id="ajaxLogin" onclick="return false;" href="http://www.qinqinbaby.com/login" class="btn_login">登录</a>
+                        <a style="color: #f00180" href="http://www.qinqinbaby.com/signup" class="btn_reg">免费注册</a>
+                        <!--                                <a href="--><!--?//= U('Seller/Index/index','',false,false,true);?--><!--" style="color: #f00180">商家中心</a>-->
+                        <!--                登录前-->
+                    
+                </div>
+
+                <ul style="line-height: 1em;margin-left: -1px;" class="xqzh-ht-list">
+                    <li style="line-height: 1em;">
+                        <a class="J_header_cartCount" rel="nofollow" target="_blank" href="http://www.qinqinbaby.com/cart">购物车</a>
+                    </li>
+
+                    <li style="line-height: 1em; margin-top: -7px;" data-hover="xqzh-ht-order_hover" class="xqzh-ht-order">
+                        <ul class="xqzh-ht-order_list">
+                            <li class="xqzh-ht-order_top"><a target="_blank" href="http://www.qinqinbaby.com/my2">我的亲亲宝贝<i class="xqzh-l-icon"></i></a></li>
+                            <li><a rel="nofollow" target="_blank" href="http://www.qinqinbaby.com/my2">我的订单</a></li>
+                            <li><a rel="nofollow" target="_blank" href="http://www.qinqinbaby.com/person">个人资料</a></li>
+                        </ul>
+                    </li>
+                    <li style="line-height: 1em;" data-hover="xqzh-ht-weibo_hover" class="xqzh-ht-weibo">
+                        <span><a rel="nofollow" class="xqzh-ht-weibo_top">关注</a></span>
+                        <div class="xqzh-weibo-list">
+                            <dl class="xqzh-weibo-list_l ">
+                                <dd class="xqzh-weixin-icon">用微信扫一扫</dd>
+                                <dt><img width="90px" height="90px" src="http://p0.qinqinbaby.com/Resource/Images/home/twocode.jpg" alt="亲亲宝贝微信"></dt>
+                                <dd>订阅亲亲宝贝微信</dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li style="line-height: 1em;" class="xqzh-ht-collect-con">
+                        <a href="javascript:void(0);" onclick="AddFavorite('亲亲宝贝','http://www.qinqinbaby.com')" class="xqzh-ht-collect">收藏本站</a>
+                    </li>
+                    <li style="line-height: 1em; "><a href="http://www.qinqinbaby.com/home/index/investment" style="color:#f5a400;">招商</a>
+                </li></ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    
+        var vnum=0;
+        var vtimer=null;
+
+        //大图轮播
+        var realindex=0;
+        $(".homenew .sec_main .inner .iphonemsg .btm li").mouseover(function(){
+            clearInterval(vtimer);
+
+            $(this).addClass("active").siblings().removeClass("active");
+            autoPlay();
+            vnum=$(this).index();
+    
+            $(".homenew .sec_main .inner .iphone ul li").each(function(index){
+                if(vnum == index){
+                    $(this).fadeIn().siblings().fadeOut();
+                }
+            })
+        })
+        autoPlay();
+        function autoPlay(){
+            vtimer=setInterval(function(){
+                vnum++;
+                if(vnum>=$(".homenew .sec_main .inner .iphone ul li").length){
+                    vnum=0;
+                }
+                $(".homenew .sec_main .inner .iphonemsg .btm li").eq(vnum).addClass("active").siblings().removeClass("active");
+
+                $(".homenew .sec_main .inner .iphone ul li").eq(vnum).fadeIn().siblings().fadeOut();
+            },3500);}
+</script>
+
