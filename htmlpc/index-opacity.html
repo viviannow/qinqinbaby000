@@ -39,8 +39,8 @@
     <!-- 主区 -->
     <div class="sec_main">
         <div class="inner cl">
-            <div class="fl iphone">
-                <ul>
+            <div class="fl iphone" id="slidimg">
+                <ul style="position:relative">
                     <li class="active"><img src="http://p0.qinqinbaby.com/Resource/Images/home/indexnew/slide1.png" alt=""></li>
                     <li><img src="http://p0.qinqinbaby.com/Resource/Images/home/indexnew/slide2.png" alt=""></li>
                     <li><img src="http://p0.qinqinbaby.com/Resource/Images/home/indexnew/slide3.png" alt=""></li>
@@ -56,7 +56,7 @@
                 <div class="md">
                     <img class="op" src="http://p0.qinqinbaby.com/Resource/Images/home/indexnew/a.png" alt="">
                 </div>
-                <ul class="btm cl">
+                <ul class="btm cl" id="slidtext">
                     <li class="fl active">
                         <div class="sec_tp">我家<br>附近</div>
                         <div class="sec_btm">
@@ -97,7 +97,6 @@
                             <p>生活育儿</p>
                         </div>
                     </li>
-                   
                 </ul>
             </div>
         </div>
@@ -127,34 +126,72 @@
 
 <script>
     
+        // var vnum=0;
+        // var vtimer=null;
+
+        // //大图轮播
+        // var realindex=0;
+        // $("#slidtext li").mouseover(function(){
+        //     clearInterval(vtimer);
+
+
+        //     $(this).addClass("active").siblings().removeClass("active");
+        //     autoPlay();
+        //     vnum=$(this).index();
+    
+        //     $("#slidimg li").each(function(index){
+        //         if(vnum == index){
+        //             $(this).fadeIn().siblings().fadeOut();
+        //         }
+        //     })
+        // })
+        // autoPlay();
+        // function autoPlay(){
+        //     vtimer=setInterval(function(){
+        //         clearInterval(vtimer);
+        //         vnum++;
+        //         if(vnum>=$("#slidimg li").length){
+        //             vnum=0;
+        //         }
+        //         $("#slidtext li").eq(vnum).addClass("active").siblings().removeClass("active");
+
+        //         $("#slidimg li").eq(vnum).fadeIn().siblings().fadeOut();
+        //     },3500);
+        // }
+        // 
+
+
         var vnum=0;
         var vtimer=null;
-
         //大图轮播
         var realindex=0;
-        $(".homenew .sec_main .inner .iphonemsg .btm li").mouseover(function(){
-            clearInterval(vtimer);
-
+        $("#slidtext li").mouseover(function(){
+            // alert(1)
+            clearInterval(vtimer); 
             $(this).addClass("active").siblings().removeClass("active");
-            autoPlay();
             vnum=$(this).index();
     
-            $(".homenew .sec_main .inner .iphone ul li").each(function(index){
+            $("#slidimg li").each(function(index){
                 if(vnum == index){
                     $(this).fadeIn().siblings().fadeOut();
                 }
             })
-        })
+        });
+         $("#slidtext").mouseout(function(){
+                autoPlay();
+         })
         autoPlay();
         function autoPlay(){
             vtimer=setInterval(function(){
+
                 vnum++;
-                if(vnum>=$(".homenew .sec_main .inner .iphone ul li").length){
+                if(vnum>=$("#slidimg li").length){
                     vnum=0;
                 }
-                $(".homenew .sec_main .inner .iphonemsg .btm li").eq(vnum).addClass("active").siblings().removeClass("active");
+                $("#slidtext li").eq(vnum).addClass("active").siblings().removeClass("active");
 
-                $(".homenew .sec_main .inner .iphone ul li").eq(vnum).fadeIn().siblings().fadeOut();
-            },3500);}
+                $("#slidimg li").eq(vnum).fadeIn().siblings().fadeOut();
+            },1500);
+        }        
 </script>
 
