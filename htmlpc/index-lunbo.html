@@ -8,9 +8,9 @@
 <link rel="stylesheet" href="../dest/css/newindex.css" />
 <style>
 .homenew .sec_main .inner .iphone{overflow: hidden;}
-.homenew .sec_main .inner .iphone .inner{width: 300px;height: 535px;overflow: hidden;margin: 103px 0 0 32px;background: #fff;}
-.homenew .sec_main .inner .iphone ul {width: 1503px;margin: 0;background: #fff;position: relative;}
-.homenew .sec_main .inner .iphone ul li{position: relative;float: left;z-index: 9999;display: block;}
+.homenew .sec_main .inner .iphone .inner{width: 300px;height: 535px;overflow: hidden;margin: 103px 0 0 32px;background: #fff;position: relative;;}
+.homenew .sec_main .inner .iphone ul {width: 1550px;margin: 0;background: #fff;position: relative;}
+.homenew .sec_main .inner .iphone ul li{float: left;z-index: 9999;display: block;overflow: hidden;}
 
 </style>
 
@@ -169,30 +169,22 @@
         //     },3500);
         // }
         // 
-
-
         var vnum=0;
         var vtimer=null;
         var vgo=0;
         //大图轮播
         var realindex=0;
         $("#slidtext li").mouseover(function(){
-            // alert(1)
             clearInterval(vtimer); 
             $(this).addClass("active").siblings().removeClass("active");
             vnum=$(this).index();
             vgo=300*vnum
-
-    
-         $("#slidimg ul").stop().animate({left: -vgo}, 'normal');
-})
-         $("#slidtext").mouseout(function(){
-                autoPlay();
-         })
+            $("#slidimg ul").stop().animate({left: -vgo}, 'normal');
+        })
+        $("#slidtext").mouseout(function(){ autoPlay();})
         autoPlay();
         function autoPlay(){
             vtimer=setInterval(function(){
-
                 vnum++;
                 if(vnum>=$("#slidimg li").length){
                     vnum=0;
@@ -203,9 +195,5 @@
                $("#slidimg ul").stop().animate({left: -vgo}, 'normal');
             },1500);
         }     
-        // 
-        //    
-        //       
-      
 </script>
 
