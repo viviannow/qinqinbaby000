@@ -37,7 +37,7 @@
 
 .homenew .sec_main .inner .iphone ul { position: relative; margin: 103px 0 0 32px; width: 300px; height: 535px; background: #fff; }
 
-.homenew .sec_main .inner .iphone ul li { font-family: "微软雅黑"; /* position: absolute; left: 0; top: 0; display: none; */ }
+.homenew .sec_main .inner .iphone ul li { font-family: "微软雅黑"; position: absolute; left: 0; top: 0; display: none; }
 
 .homenew .sec_main .inner .iphone ul li.active { display: block; }
 
